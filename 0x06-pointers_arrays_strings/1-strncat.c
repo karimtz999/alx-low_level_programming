@@ -28,4 +28,8 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	dest[n1] = '\0';
 	return (dest);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e9893a2b70102cc944e04a7024be0fa8383912fe

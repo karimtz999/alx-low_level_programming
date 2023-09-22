@@ -15,4 +15,8 @@ char *_strncpy(char *dest, char *src, int n)
 	for ( ; i < n; i++)
 		*(dest + i) = '\0';
 	return (dest);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e9893a2b70102cc944e04a7024be0fa8383912fe

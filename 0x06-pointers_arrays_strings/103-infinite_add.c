@@ -51,4 +51,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		return (r + 1);
 	else
 		return (r);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e9893a2b70102cc944e04a7024be0fa8383912fe

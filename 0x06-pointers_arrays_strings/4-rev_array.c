@@ -19,4 +19,8 @@ void reverse_array(int *a, int n)
 		begin++;
 		end--;
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e9893a2b70102cc944e04a7024be0fa8383912fe

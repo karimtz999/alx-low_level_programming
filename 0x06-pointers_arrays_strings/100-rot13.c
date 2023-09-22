@@ -25,4 +25,8 @@ char *rot13(char *s)
 		i++;
 	}
 	return (s);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e9893a2b70102cc944e04a7024be0fa8383912fe

@@ -25,4 +25,8 @@ char *_strcat(char *dest, char *src)
 		n1++;
 	}
 	return (dest);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e9893a2b70102cc944e04a7024be0fa8383912fe
