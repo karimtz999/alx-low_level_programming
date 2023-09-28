@@ -20,4 +20,8 @@ int main(void)
   /* ...so that this prints 98\n */
   printf("a[2] = %d\n", a[2]);
   return (0);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e9893a2b70102cc944e04a7024be0fa8383912fe

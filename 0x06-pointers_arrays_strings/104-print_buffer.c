@@ -40,4 +40,8 @@ void print_buffer(char *b, int size)
 			printf("\n");
 		}
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e9893a2b70102cc944e04a7024be0fa8383912fe

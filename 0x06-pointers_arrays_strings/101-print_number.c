@@ -23,4 +23,8 @@ void print_number(int n)
 	}
 	print_number(num / 10);
 	print_number(num % 10);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e9893a2b70102cc944e04a7024be0fa8383912fe
