@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+
+/**
+ * _strdup - Duplicate a string in a newly allocated memory space
+ * @str: The string to duplicate
+ *
+ * Description:
+ * This function takes a string `str` and allocates memory to create a duplicate
+ * of the string. The duplicate string is stored in a newly allocated memory space.
+ *
+ * Return: If successful, a pointer to the newly allocated string is returned.
+ * If memory allocation fails or `str` is NULL, NULL is returned.
+ */
+char *_strdup(char *str)
+{
+    char *aaa;
+    int i, r = 0;
+
+    if (str == NULL)
+        return (NULL);
+
+    i = 0;
+    while (str[i] != '\0')
+        i++;
+
+    aaa = malloc(sizeof(char) * (i + 1));
+
+    if (aaa == NULL)
+        return (NULL);
+
+    for (r = 0; str[r]; r++)
+        aaa[r] = str[r];
+
+    return (aaa);
+}
