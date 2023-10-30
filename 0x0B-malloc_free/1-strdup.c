@@ -1,33 +1,53 @@
 #include "main.h"
+
 /**
-* _strdup - strdup and  append to the end of the string buffer
-* @str: the string to append
-* Return: the new string
-*/
+ * _strlen - counts the size of string
+ * @s: pointer to char
+ * Return: return the size of string
+ */
+
+int _strlen(char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+
+	return (i);
+}
+
+/**
+ * _strdup - function that allocates a block of memory and initialize it.
+ *
+ * @str: string will be coppied to the allocated memory.
+ *
+ * Return: return allocated memory.
+ */
+
 char *_strdup(char *str)
 {
-	int i, j;
+	int i, len;
+	char *s;
 
-	char *p;
-
-	if (str == NULL)
-		return (NULL);
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-
-	p = malloc(i + 1);
-
-	if (p == NULL)
-		return (NULL);
-
-	for (j = 0; j < i; j++)
+	if (str == 0)
 	{
-		p[j] = str[j];
+		return (NULL);
 	}
-	p[j] = '\0';
 
-	return (p);
+	len = _strlen(str);
+	s = malloc(len + 1 * sizeof(char));
 
+	if (s == NULL)
+	{
+		return (NULL);
+	}
+
+	for (i = 0; i < len; i++)
+	{
+		s[i] = str[i];
+	}
+	s[i] = '\0';
+	return (s);
 }
