@@ -1,33 +1,33 @@
 #include "main.h"
-#include <stdlib.h>
-
 /**
- * create_array - create an array of size `size` and assign char `c` to each element
- * @size: size of array
- * @c: char to assign
- *
- * Description:
- * Create an array of size `size` and assign char `c` to each element. If size is 0 or
- * memory allocation fails, it returns NULL.
- *
- * Return: Pointer to the array, NULL if allocation fails or if size is 0.
- */
-char *create_array(unsigned int size, char c)
+* _strdup - strdup and  append to the end of the string buffer
+* @str: the string to append
+* Return: the new string
+*/
+char *_strdup(char *str)
 {
-	char *str;
-	unsigned int i;
+	int i, j;
 
-	str = malloc(sizeof(char) * size);
+	char *p;
 
-	if (size == 0 || str == NULL)
-	{
+	if (str == NULL)
 		return (NULL);
-	}
 
-	for (i = 0; i < size; i++)
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+
+	p = malloc(i + 1);
+
+	if (p == NULL)
+		return (NULL);
+
+	for (j = 0; j < i; j++)
 	{
-		str[i] = c;
+		p[j] = str[j];
 	}
+	p[j] = '\0';
 
-	return (str);
+	return (p);
+
 }
