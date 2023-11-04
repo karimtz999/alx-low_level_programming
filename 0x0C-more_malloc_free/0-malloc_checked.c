@@ -10,16 +10,12 @@
 
 void *malloc_checked(unsigned int b)
 {
-	// Allocate memory block of size 'b'
-	int *memory = malloc(b);
-	
-	// Check if memory allocation failed
+	int *memory;
+
+	memory = malloc(b);
 	if (!memory)
 	{
-		// Terminate program with exit code 98
 		exit(98);
 	}
-	
-	// Return allocated memory block
 	return (memory);
 }
